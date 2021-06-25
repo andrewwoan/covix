@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #001E8A;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.OtherUserDashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="803.0" layoutX="316.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1085.0" />
+      <AnchorPane layoutX="-6.0" layoutY="-12.0" prefHeight="816.0" prefWidth="325.0" style="-fx-background-color: #001E8A;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="64.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/whiteLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="132.0" layoutY="55.0" text="Covix" textFill="WHITE">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutX="51.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+            <Button fx:id="myDashBtn" layoutX="85.0" layoutY="177.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="My Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="GroupBtn" layoutX="40.0" layoutY="240.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Group" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutBtn" layoutX="44.0" layoutY="717.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home-svgrepo-com%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="731.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logout-svgrepo-com%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/group-svgrepo-com%20(1)%201.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ConnectionBtn" layoutX="65.0" layoutY="295.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Connection" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="49.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="UpdateStatusBtn" layoutX="79.0" layoutY="361.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Update Status" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="49.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(2).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="AboutBtn" layoutX="14.0" layoutY="430.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="245.0" style="-fx-background-color: none;" text="About" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="54.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(3).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2337a7" height="218.0" layoutX="319.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1082.0" />
+      <TableView fx:id="connectionsTable" layoutX="378.0" layoutY="417.0" prefHeight="321.0" prefWidth="433.0">
+        <columns>
+          <TableColumn fx:id="connectionNameCol" prefWidth="123.199951171875" text="Name" />
+            <TableColumn fx:id="connectionEmailCol" minWidth="8.0" prefWidth="180.800048828125" text="Email" />
+            <TableColumn fx:id="connectionCovixScoreCol" minWidth="0.0" prefWidth="129.60003662109375" text="CovixScore" />
+        </columns>
+      </TableView>
+      <Label layoutX="371.0" layoutY="24.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <TableView fx:id="groupsTable" layoutX="904.0" layoutY="419.0" prefHeight="321.0" prefWidth="433.0">
+         <columns>
+            <TableColumn fx:id="groupAreaCol" prefWidth="258.4000244140625" text="Group Area" />
+            <TableColumn fx:id="numCol" prefWidth="174.39990234375" text="Number of Members" />
+         </columns></TableView>
+      <Label layoutX="384.0" layoutY="377.0" text="Connections">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="909.0" layoutY="381.0" text="Groups">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/empty-profile-grey_4_2.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLbl" layoutX="415.0" layoutY="295.0" prefHeight="28.0" prefWidth="136.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="userScoreLbl" layoutX="585.0" layoutY="129.0" text="... Covix Score" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="covixScoreLbl" layoutX="581.0" layoutY="164.0" text="1000" textFill="WHITE">
+         <font>
+            <Font size="77.0" />
+         </font>
+      </Label>
+      <Button layoutX="709.0" layoutY="387.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Add Connection" textFill="#2252f5" />
+      <Button layoutX="1263.0" layoutY="385.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Join Group" textFill="#2252f5" />
+      <Label layoutX="904.0" layoutY="136.0" text="Vaccine Status:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="904.0" layoutY="193.0" text="Risk Score:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfConnectionsLabel" layoutX="513.0" layoutY="382.0" text="(42)" textFill="#063cff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfGroupsLabel" layoutX="985.0" layoutY="384.0" text="(42)" textFill="#063cff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userComboBox" layoutX="863.0" layoutY="42.0" prefHeight="32.0" prefWidth="270.0" />
+      <Label layoutX="773.0" layoutY="44.0" text="Find User:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="connectBtn" layoutX="1175.0" layoutY="44.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="102.0" style="-fx-background-color: #001E8A; -fx-border-color: none;" text="Connect" textFill="WHITE" />
+      <Label fx:id="riskScoreLbl" layoutX="998.0" layoutY="197.0" text="----" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="vacStatLbl" layoutX="1031.0" layoutY="139.0" text="----" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

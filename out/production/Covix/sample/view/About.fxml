@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AboutController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="803.0" layoutX="316.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1085.0" />
+      <AnchorPane layoutX="-6.0" layoutY="-12.0" prefHeight="816.0" prefWidth="325.0" style="-fx-background-color: #001E8A;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="64.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/whiteLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="132.0" layoutY="55.0" text="Covix" textFill="WHITE">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutX="51.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+            <Button fx:id="myDashBtn" layoutX="85.0" layoutY="177.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="My Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="GroupBtn" layoutX="40.0" layoutY="240.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Group" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutBtn" layoutX="44.0" layoutY="717.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home-svgrepo-com%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="731.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logout-svgrepo-com%201.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="48.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/group-svgrepo-com%20(1)%201.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ConnectionBtn" layoutX="65.0" layoutY="295.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Connection" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="49.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="UpdateStatusBtn" layoutX="79.0" layoutY="361.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="195.0" style="-fx-background-color: none;" text="Update Status" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="49.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(2).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="AboutBtn" layoutX="14.0" layoutY="430.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="245.0" style="-fx-background-color: none;" text="About" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="46.0" layoutX="54.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Group%20(3).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="371.0" layoutY="24.0" text="About">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLbl" layoutX="415.0" layoutY="295.0" prefHeight="28.0" prefWidth="136.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="371.0" layoutY="123.0" prefHeight="618.0" prefWidth="962.0" style="-fx-background-color: white; -fx-border-color: white;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Covix Score">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="42.0" text="Covix Score - What is it?">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="89.0" text="Each point in the covix score is an additional 0.1% that you will likely pass on Covid-19 to someone else assuming you are in regular contact.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="123.0" text="This means the maximum Covix Score any user can recieve when using this app is 1000, which represents that you have an 100% chance to pass">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="143.0" text="Covid-19 to someone else, assuming you are in regular contact.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="183.0" text="&quot;Regular Contact&quot; is defined as meeting at least once every week.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="221.0" text="Calculation Method">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="267.0" text="If you recieved a vaccine, 90% of your total covix score will be taken off.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="299.0" text="If you've been tested, 50% of your total covix score will be taken off.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="331.0" text="For each symptom you select in the &quot;Update Status&quot; area, your score will increase by 10 points.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="366.0" text="For each user you connect to, that user's covix score will be added to yours.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="410.0" text="Disclaimer">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="457.0" text="We do not claim any of the scoring is accurate and representational of what will occur in the real world. These are calculations based on speculation.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Risk Score">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="46.0" text="Risk Score - What is it?">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="95.0" text="Each point in your risk score represents an additional 0.1% chance that you get Covid-19 within a week.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="137.0" text="Calculation Method">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="179.0" text="For each connection you add, your Risk Score increases by 5 points.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Group Covix Score">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="20.0" layoutY="34.0" text="Group Covix Score - What is it?">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="77.0" text="Each point in the group Covix Score represents an additional 0.1% chance that those living in the area will get Covid-19 in the next month.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="121.0" text="Calculation Method">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="161.0" text="The sum of each member of the group's covix score.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

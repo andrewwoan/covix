@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html { height: 100% }
+        body { height: 100%; margin: 0; padding: 0 }
+        #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxGjxn6JpytJ2bqC9hATIGuEGELjjHpOM&callbac=initMap&libraries=&v=weekly">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(41.203323, -77.194527),
+                zoom: 7,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+                // region:
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                mapOptions);
+
+            var cityCircle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: { lat: 40.798214, lng: -77.859909},
+                radius: Math.sqrt(11000) * 100,
+            });
+
+            var cityCircle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: { lat: 39.895264, lng: -80.18542},
+                radius: Math.sqrt(9000) * 100,
+            });
+
+            var cityCircle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: { lat: 42.1292241, lng: -80.085059},
+                radius: Math.sqrt(12000) * 100,
+            });
+
+            var cityCircle = new google.maps.Circle({
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#FF0000",
+                fillOpacity: 0.35,
+                map,
+                center: { lat: 39.952583, lng: -75.165222},
+                radius: Math.sqrt(14000) * 100,
+            });
+
+        }
+    </script>
+</head>
+<body onload="initialize()">
+<div id="map_canvas" style="width:585px; height:510px"></div>
+</body>
+</html>
